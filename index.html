@@ -27,29 +27,38 @@
             border: 1px solid #ccc;
             resize: none;
         }
-        button {
+        button, .next-btn {
+            display: inline-block;
             background: #007bff;
             color: white;
             border: none;
             padding: 10px;
-            width: 100%;
+            width: 48%;
             border-radius: 5px;
             cursor: pointer;
             margin-top: 10px;
+            text-decoration: none;
+            text-align: center;
         }
         button:hover {
             background: #0056b3;
         }
+        .next-btn {
+            background: #ff3366;
+        }
+        .next-btn:hover {
+            background: #ff1e56;
+        }
     </style>
 </head>
 <body>
-
     <div class="container">
         <h2>Drop Your Confession</h2>
         <textarea id="confession" placeholder="Write your confession here..."></textarea>
+        <br>
         <button onclick="submitConfession()">Submit</button>
+        <a href="confession1.html" class="next-btn">Next</a>
     </div>
-
     <script>
         function submitConfession() {
             let confession = document.getElementById("confession").value;
@@ -61,6 +70,5 @@
             }
         }
     </script>
-
 </body>
 </html>
