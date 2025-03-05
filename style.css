@@ -1,42 +1,46 @@
 body {
     font-family: 'Arial', sans-serif;
     text-align: center;
-    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    background: url('https://www.transparenttextures.com/patterns/floral.png'), linear-gradient(135deg, #ffb6c1, #ff69b4);
     color: white;
     margin: 0;
     padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .container {
     max-width: 400px;
-    margin: auto;
     background: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
-h1 {
-    font-size: 2.5em;
+h1, h2 {
+    font-size: 2em;
+    color: #ff3366;
 }
 p {
     font-size: 1.2em;
     color: black;
 }
-button, .next-btn, .back-btn {
+.click-btn, .next-btn, .back-btn {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 15px 20px;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 10px;
     font-size: 1.2em;
     margin: 10px;
     border: none;
     cursor: pointer;
 }
-button {
-    background: #007bff;
+.click-btn {
+    background: #ff1493;
     color: white;
 }
-button:hover {
-    background: #0056b3;
+.click-btn:hover {
+    background: #ff69b4;
 }
 .next-btn {
     background: #ff3366;
